@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Machine Learning</title>
+    <style>
+      /* Basic theme for remark slides */
+      * {
+          .box-sizing(border-box);
+      }
+      *:before,
+      *:after {
+          .box-sizing(border-box);
+      }
+      
+      html {
+          font-size: 100%;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+      
+      body {
+          margin: 0;
+          font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+          font-size: 24px;
+          line-height: 1.5;
+          color: #555555;
+          background-color: #FFFFFF;
+      }
+      
+      a {
+          color: #1E90FF;
+          text-decoration: none;
+          font-weight: 500;
+      }
+      
+      a:hover, a:focus {
+          color: #cccccc;
+          text-decoration: none;
+      }
+      
+      a:focus {
+          outline: 3px solid #1E90FF;
+          outline-offset: 0;
+          background-color: #1E90FF;
+          color: #FFF;
+          text-decoration: none;
+      }
+      
+      ol {
+          padding: 0 0 0 1.5em;
+          margin: 1em 0;
+      }
+      
+      ul {
+          margin: 1em 0;
+          padding: 0 0 0 1em;
+      }
+      
+      img {
+          vertical-align: middle;
+      }
+      
+      hr {
+          height: 0;
+          margin: 1em 0;
+          border: 0;
+          border-top: 1px solid #cccccc;
+      }
+      
+      
+      h1, h2, h3, h4, h5, h6 {
+          font-weight: 500;
+          margin: 1em 0 0.5em;
+      }
+      
+      b,
+      strong {
+          font-weight: 500;
+      }
+      
+      blockquote {
+          border-left: 5px solid #cccccc;
+          padding-left: 1em;
+          margin: 1em -1em;
+          font-style: italic;
+          color: #999999;
+      }
+      
+      .remark-slide-number {
+          display: none;
+      }
+      
+      .remark-slide {
+          display: table;
+      }
+      
+      .remark-slide-content {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 4em;
+          font-size: 24px;
+      }
+
+      .remark-slide-content h1 {
+          font-size: 56px;
+          color: #1E90FF;
+      }
+
+      .remark-slide-content h2 {
+          font-size: 48px;
+          color: #1E90FF;
+      }
+
+      .remark-slide-content h3 {
+          font-size: 40px;
+          color: #1E90FF;
+      }
+
+      .remark-slide-content h4 {
+          font-size: 36px;
+          color: #1E90FF;
+      }
+
+      .remark-slide-content h5 {
+          font-size: 30px;
+          color: #1E90FF;
+      }
+      
+      .remark-slide-content h6 {
+          font-size: 24px;
+          color: #1E90FF;
+      }
+
+      .remark-slide-content > :first-child {
+          margin-top: 0;
+      }
+      
+      .remark-slide-content > :last-child {
+          margin-bottom: 0;
+      }
+
+      .remark-code-line {
+          white-space: normal;
+          background-color: #000;
+          border: 1px solid #000;
+          color: #fff;
+          padding: 0 1em;
+      }
+      
+    </style>
+  </head>
+  <body>
+<textarea id="source">
+class: center, middle, main-title
+
+# Slide Template
+
+---
+## First Slide
+
+Remark.js is a web based slideshow with some great features that is
+comparable to powerpoint or google slides except you can write your
+presentations entirely in
+[markdown](http://daringfireball.net/projects/markdown/syntax).
+
+You can see a [demo of remark.js in action here](http://remarkjs.com/)
+and when checking it out, be sure to press `p` to see the incredibly
+useful presenter mode.
+
+---
+## Useful features
+
+- Presenter mode
+- Markdown formatting
+- Supports code/syntax highlighting
+- Responsive
+- Touch support (swipe to change slide)
+- No special software required, just a browser
+- Can be styled with CSS
+- Is a portable, self-contained html document
+- Works offline (with some caveats - more on this later)
+
+
+---
+## Mathematics
+
+[Mathjax](http://www.mathjax.org/) is used to render mathematics, both
+inline $\alpha=\beta$ and displayed
+$$
+f(x) = \int_{0}^{t} g(\tau) d\tau
+$$
+
+
+</textarea>
+    <script src="http://gnab.github.io/remark/downloads/remark-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+
+      window.MathJax = {
+	  tex: {
+	      inlineMath: [              // start/end delimiter pairs for in-line math
+		  ['$', '$'],
+		  ['\\(', '\\)']
+	      ],
+	      displayMath: [             // start/end delimiter pairs for display math
+		  ['$$', '$$'],
+		  ['\\[', '\\]']
+	      ]
+	  },
+	  options: {
+	      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+	  }
+      };
+      (function () {
+	  var script = document.createElement('script');
+	  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js';
+	  script.async = true;
+	  document.head.appendChild(script);
+      })();
+    </script>
+  </body>
+</html>
+
